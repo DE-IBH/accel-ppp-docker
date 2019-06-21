@@ -25,4 +25,4 @@ COPY --from=build /usr/share/accel-ppp /usr/share/accel-ppp
 COPY --from=build /usr/lib64/accel-ppp /usr/lib64/accel-ppp
 
 ENTRYPOINT ["/usr/sbin/accel-pppd"]
-CMD ["-c", "/etc/accel-ppp/accel-ppp.conf"]
+CMD ["-c", "/etc/accel-ppp.conf"]

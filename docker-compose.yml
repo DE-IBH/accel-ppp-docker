@@ -1,0 +1,12 @@
+# example docker-compose file
+version: '3'
+services:
+  accel-ppp:
+    image: ibhde/accel-ppp
+    cap_add:
+      - NET_ADMIN
+      - NET_BROADCAST
+      - NET_RAW
+    network_mode: host
+    volumes:
+      - /path/to/accel-ppp.conf:/etc/accel-ppp.conf
